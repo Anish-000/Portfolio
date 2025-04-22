@@ -1,43 +1,47 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import Thal from '../../assets/images/Thal.jpg';
+import Donut from '../../assets/images/Donut.jpg';
+import Quantum from '../../assets/images/Quantum.jpg';
+import Portfolio from '../../assets/images/portfolio.jpg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
     {
-      title: "E-Commerce Website",
-      category: "web",
-      image: "/project1.jpg",
-      description: "A full-stack e-commerce platform built with MERN stack featuring user authentication, payment integration, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/Anish-000/project1",
-      live: "https://project1.com"
-    },
-    {
-      title: "Student Management System",
+      title: "Thalassemia Screening Device",
       category: "desktop",
-      image: "/project2.jpg",
-      description: "Desktop application for managing student records, attendance, and performance tracking.",
-      technologies: ["Java", "MySQL", "JavaFX"],
-      github: "https://github.com/Anish-000/project2"
+      image: Thal,
+      description: "My First Official Work for developing a screening device named Thalassemia Screening Device using Arduino Uno",
+      technologies: ["Arduino Uno", "LCD", "Keyboard", "C++"],
+      github: "https://github.com/Anish-000/Thalassemia-Screening-Device"
     },
     {
-      title: "Weather App",
-      category: "mobile",
-      image: "/project3.jpg",
-      description: "Mobile application that provides real-time weather updates with location tracking.",
-      technologies: ["React Native", "Weather API"],
-      github: "https://github.com/Anish-000/project3"
+      title: "Quantum Cryptography",
+      category: "desktop",
+      image: Quantum,
+      description: "This is my initial research into Quantum Computing and Quantum Cryptography, focusing on learning the fundamentals and understanding specific cryptographic algorithms like Saber and Kyber ",
+      technologies: ["C", "C++", "Reserach-paper"],
+      github: "https://github.com/Anish-000/Quantum-Cryptography"
+    },
+    {
+      title: "Donut Website Frontend",
+      category: "web",
+      image: Donut,
+      description: "A responsive donut frontend website",
+      technologies: ["HTML5", "CSS3","JavaScript"],
+      github: "https://github.com/Anish-000/Donut-Frontend",
+      live: "https://project3.com"
     },
     {
       title: "Portfolio Website",
       category: "web",
-      image: "/project4.jpg",
+      image: Portfolio,
       description: "Personal portfolio website showcasing projects and skills.",
       technologies: ["React", "CSS3", "AOS"],
-      github: "https://github.com/Anish-000/Donut-Frontend",
+      github: "https://github.com/Anish-000/Portfolio",
       live: "https://project4.com"
     }
   ];
