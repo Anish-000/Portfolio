@@ -1,20 +1,22 @@
 import React from 'react';
 import './Skills.css';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPython, FaJava, FaDatabase, FaGitAlt } from 'react-icons/fa';
-import { SiJavascript, SiMongodb } from 'react-icons/si';
+import { SiJavascript, SiMongodb, SiCplusplus, SiC } from 'react-icons/si';
 
 const Skills = () => {
   const skills = [
-    { name: 'HTML5', icon: <FaHtml5 />, percentage: 90 },
-    { name: 'CSS3', icon: <FaCss3Alt />, percentage: 85 },
-    { name: 'JavaScript', icon: <SiJavascript />, percentage: 80 },
-    { name: 'React', icon: <FaReact />, percentage: 75 },
-    { name: 'Node.js', icon: <FaNodeJs />, percentage: 70 },
-    { name: 'Python', icon: <FaPython />, percentage: 85 },
-    { name: 'Java', icon: <FaJava />, percentage: 80 },
-    { name: 'MongoDB', icon: <SiMongodb />, percentage: 75 },
-    { name: 'SQL', icon: <FaDatabase />, percentage: 85 },
-    { name: 'Git', icon: <FaGitAlt />, percentage: 80 }
+    { name: 'HTML5', icon: <FaHtml5 />, percentage: 80 },
+    { name: 'CSS3', icon: <FaCss3Alt />, percentage: 75 },
+    { name: 'JavaScript', icon: <SiJavascript />, percentage: 70 },
+    { name: 'React', icon: <FaReact />, percentage: 70 },
+    { name: 'Node.js', icon: <FaNodeJs />, percentage: 60 },
+    { name: 'Python', icon: <FaPython />, percentage: 60 },
+    { name: 'Java', icon: <FaJava />, percentage: 65 },
+    { name: 'MongoDB', icon: <SiMongodb />, percentage: 60 },
+    { name: 'SQL', icon: <FaDatabase />, percentage: 80 },
+    { name: 'Git', icon: <FaGitAlt />, percentage: 60 },
+    { name: 'C++', icon: <SiCplusplus />, percentage: 80 },
+    { name: 'C', icon: <SiC />, percentage: 85 }
   ];
 
   const education = [
