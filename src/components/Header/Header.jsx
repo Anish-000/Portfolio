@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
-import headerImage from '../../assets/images/your-image.jpg';
+import headerImage from '../../assets/images/your-actual-image.jpg';
 
 const Header = () => {
   const [text, setText] = useState('');
