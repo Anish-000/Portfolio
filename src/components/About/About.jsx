@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './About.css';
-import aboutImage from '../../assets/images/your-actual-image.jpg';
+import aboutImage from '../../assets/images/your-image.jpg';
 
 const About = () => {
   const [showMore, setShowMore] = useState(false);
