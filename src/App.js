@@ -13,7 +13,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 600,
       easing: 'ease-in-out',
       once: false,
       mirror: true,
