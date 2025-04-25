@@ -35,12 +35,7 @@ const Skills = () => {
   ];
 
   const experience = [
-    {
-      position: 'Web Development Intern',
-      company: '[Company Name]',
-      year: 'June 2025 - Present',
-      description: 'Working on full-stack web development projects using MERN stack.'
-    },
+    
     {
       position: 'Student Developer',
       company: 'KPC Team',
