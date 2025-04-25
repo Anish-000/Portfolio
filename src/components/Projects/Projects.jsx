@@ -46,7 +46,7 @@ const Projects = () => {
     }
   ];
 
-  const categories = ['all', 'web', 'mobile', 'desktop'];
+  const categories = ['all', 'web', 'mobile', 'desktop','certificates'];
 
   const filteredProjects = filter === 'all' 
     ? projects 
