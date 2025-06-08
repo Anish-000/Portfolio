@@ -7,6 +7,7 @@ import Quantum from '../../assets/images/Quantum.jpg';
 import Portfolio from '../../assets/images/portfolio.jpg';
 import reactjs from '../../assets/images/Certificate-react.jpg';
 import thalc from '../../assets/images/Certificate-thal.jpg';
+import cloudc from '../../assets/images/Cloud-certificate.jpg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -62,6 +63,14 @@ const Projects = () => {
       technologies: ["Arduino Uno", "LCD", "Keyboard", "C++"],
       github: "https://github.com/Anish-000/Portfolio/blob/main/src/assets/images/Certificate-thal.jpg",
     }
+    {
+      title: "Cloud Engeneering Certificate",
+      category: "certificates",
+      image: cloud,
+      description: "Successfully completed the Introduction to Cloud Computing course offered by Simplilearn.This course provided a solid foundation in cloud concepts, service models and deployment types. ",
+      technologies: ["SQL", "AWS", "Azure"],
+      github: "https://github.com/Anish-000/Portfolio/blob/main/src/assets/images/Cloud-certificate.jpg",
+    },
   ];
 
   const categories = ['all', 'web', 'mobile', 'desktop','certificates'];
