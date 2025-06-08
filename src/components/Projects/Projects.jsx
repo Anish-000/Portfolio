@@ -62,7 +62,7 @@ const Projects = () => {
       description: "I obtained the Thalassemia Screening Device Certificate by developing the device named Thalassemia Screening Device which is my firts official work. ",
       technologies: ["Arduino Uno", "LCD", "Keyboard", "C++"],
       github: "https://github.com/Anish-000/Portfolio/blob/main/src/assets/images/Certificate-thal.jpg",
-    }
+    },
     {
       title: "Cloud Engeneering Certificate",
       category: "certificates",
@@ -70,7 +70,7 @@ const Projects = () => {
       description: "Successfully completed the Introduction to Cloud Computing course offered by Simplilearn.This course provided a solid foundation in cloud concepts, service models and deployment types. ",
       technologies: ["SQL", "AWS", "Azure"],
       github: "https://github.com/Anish-000/Portfolio/blob/main/src/assets/images/Cloud-certificate.jpg",
-    },
+    }
   ];
 
   const categories = ['all', 'web', 'mobile', 'desktop','certificates'];
