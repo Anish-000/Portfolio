@@ -66,7 +66,7 @@ const Projects = () => {
     {
       title: "Cloud Engeneering Certificate",
       category: "certificates",
-      image: cloud,
+      image: cloudc,
       description: "Successfully completed the Introduction to Cloud Computing course offered by Simplilearn.This course provided a solid foundation in cloud concepts, service models and deployment types. ",
       technologies: ["SQL", "AWS", "Azure"],
       github: "https://github.com/Anish-000/Portfolio/blob/main/src/assets/images/Cloud-certificate.jpg",
