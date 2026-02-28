@@ -875,8 +875,8 @@ footer {
   section { padding: 70px 5% 60px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .home-img { width: 300px; height: 300px; }
-  .home-img-ring { width: 360px; height: 360px; }
+  .home-img { width: 280px; height: 280px; }
+  .home-img-ring { width: 350px; height: 350px; }
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
@@ -887,4 +887,13 @@ footer {
 @media (max-width: 480px) {
   .about-boxes { grid-template-columns: 1fr; }
   .social-row { flex-wrap: wrap; }
+  .home-img { width: 260px; height: 260px; }
+  .home-img-ring { width: 330px; height: 330px; }
+}
+@media (max-width: 390px) {
+  .home-img { width: 240px; height: 240px; }
+  .home-img { margin-top: 35px;}
+  .home-img-ring { width: 280px; height: 280px; }
+  .home-img-ring { margin-top: 20px;}
+  .home-text { margin-top: 25px; }
 }
