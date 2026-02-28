@@ -887,8 +887,11 @@ footer {
 @media (max-width: 480px) {
   .about-boxes { grid-template-columns: 1fr; }
   .social-row { flex-wrap: wrap; }
-  .home-img { width: 260px; height: 260px; }
-  .home-img-ring { width: 330px; height: 330px; }
+  .home-img { width: 250px; height: 250px; }
+  .home-img { margin-top: 35px;}
+  .home-img-ring { width: 290px; height: 290px; }
+  .home-img-ring { margin-top: 20px;}
+  .home-text { margin-top: 25px;}
 }
 @media (max-width: 390px) {
   .home-img { width: 240px; height: 240px; }
