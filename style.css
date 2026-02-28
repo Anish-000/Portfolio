@@ -892,6 +892,7 @@ footer {
   .home-img-ring { width: 290px; height: 290px; }
   .home-img-ring { margin-top: 20px;}
   .home-text { margin-top: 25px;}
+  .about-img { max-width: 320px; height: 320px;margin: 0 auto; }
 }
 @media (max-width: 390px) {
   .home-img { width: 240px; height: 240px; }
@@ -899,4 +900,5 @@ footer {
   .home-img-ring { width: 280px; height: 280px; }
   .home-img-ring { margin-top: 20px;}
   .home-text { margin-top: 25px; }
+  .about-img { max-width: 280px; }
 }
