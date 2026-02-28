@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anish Chattopadhyay — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">AC.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active" onclick="navScrollTo('home');return false;">Home</a></li>
+        <li><a href="#about" onclick="navScrollTo('about');return false;">About</a></li>
+        <li><a href="#skills" onclick="navScrollTo('skills');return false;">Skills</a></li>
+        <li><a href="#experience" onclick="navScrollTo('experience');return false;">Experience</a></li>
+        <li><a href="#education" onclick="navScrollTo('education');return false;">Education</a></li>
+        <li><a href="#projects" onclick="navScrollTo('projects');return false;">Projects</a></li>
+        <li><a href="#certificates" onclick="navScrollTo('certificates');return false;">Certificates</a></li>
+        <li><a href="#contact" onclick="navScrollTo('contact');return false;">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <i class="fas fa-sun theme-icon" id="themeIcon"></i>
+        <div class="theme-toggle" id="themeToggle" title="Toggle theme"></div>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="navScrollTo('home');closeMobile();return false;">Home</a>
+    <a href="#about" onclick="navScrollTo('about');closeMobile();return false;">About</a>
+    <a href="#skills" onclick="navScrollTo('skills');closeMobile();return false;">Skills</a>
+    <a href="#experience" onclick="navScrollTo('experience');closeMobile();return false;">Experience</a>
+    <a href="#education" onclick="navScrollTo('education');closeMobile();return false;">Education</a>
+    <a href="#projects" onclick="navScrollTo('projects');closeMobile();return false;">Projects</a>
+    <a href="#certificates" onclick="navScrollTo('certificates');closeMobile();return false;">Certificates</a>
+    <a href="#contact" onclick="navScrollTo('contact');closeMobile();return false;">Contact</a>
+  </div>
+
+  <!-- ── HOME ──────────────────────────────────────────── -->
+  <section id="home">
+    <div class="home-bg"></div>
+    <div class="home-inner container">
+      <div class="home-text">
+        <div class="home-greeting">Hello, World! 👋</div>
+        <h1 class="home-name">I'm <span>Anish</span><br>Chattopadhyay</h1>
+        <div class="home-role">
+          <span class="role-prefix">I am a&nbsp;</span>
+          <span class="typing-text" id="typingText">Software Developer</span>
+        </div>
+        <p class="home-desc">
+          A passionate tech enthusiast who loves building elegant digital experiences,
+          turning complex problems into clean code, and exploring the intersection
+          of data and development. When I'm not coding, you'll find me on a chessboard
+          or leveling up in-game.
+        </p>
+        <div class="home-actions">
+          <a href="#" class="btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <div class="home-socials">
+            <a href="https://github.com/Anish-000" target="_blank" class="social-icon" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anish-chattopadhyay-6659192b9/" target="_blank" class="social-icon" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/007_phoenix_007/" target="_blank" class="social-icon" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="home-img-wrap">
+        <div class="home-img-ring"></div>
+        <img src="about1.jpeg" alt="Anish Chattopadhyay" class="home-img" style="object-position: center top;">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <img src="profile.jpeg" alt="Anish Chattopadhyay" class="about-img">
+          <div class="about-img-badge">
+            <div style="font-size:1.5rem">💻</div>
+            <div>Available for<br>Opportunities</div>
+          </div>
+        </div>
+        <div class="about-info">
+          <div class="about-boxes">
+            <div class="info-box">
+              <div class="info-box-icon"><i class="fas fa-user"></i></div>
+              <div>
+                <div class="info-box-label">Full Name</div>
+                <div class="info-box-val">Anish Chattopadhyay</div>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-box-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="info-box-label">Email</div>
+                <div class="info-box-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dece3e4fee5cde8e0ece4e1a3eee2e0">anishchatto2002@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-box-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="info-box-label">Location</div>
+                <div class="info-box-val">Chakdaha, West Bengal, India</div>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-box-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="info-box-label">Phone</div>
+                <div class="info-box-val">+91 62943 48178</div>
+              </div>
+            </div>
+            <div class="info-box" style="grid-column: 1/-1;">
+              <div class="info-box-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <div class="info-box-label">Degree</div>
+                <div class="info-box-val">Master's in Computer Application ( MCA )</div>
+              </div>
+            </div>
+          </div>
+          <p class="about-desc">
+            I'm a motivated Software Developer and Data Analyst with a deep passion for technology
+            and problem-solving. I enjoy crafting intuitive web applications and discovering
+            meaningful insights through data. My journey in tech is driven by curiosity and
+            a constant desire to grow.
+          </p>
+          <div class="about-desc-extra" id="aboutExtra">
+            <p style="margin-bottom:12px;">
+              Beyond the screen, I'm an avid chess player who loves the strategic depth the game
+              demands — a mindset I bring to every technical challenge. I'm also a part-time gamer
+              who appreciates the artistry and design behind great game development.
+            </p>
+            <p>
+              I believe in writing clean, maintainable code and in continuous learning. Whether it's
+              picking up a new framework, diving into machine learning, or contributing to open-source
+              projects, I'm always looking to level up my skill set and make meaningful contributions
+              to the tech community.
+            </p>
+          </div>
+          <button class="btn-outline" id="readMoreBtn" onclick="toggleReadMore()">
+            <i class="fas fa-chevron-down" id="readMoreIcon"></i> Read More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills-categories">
+
+        <!-- Languages -->
+        <div>
+          <div class="skill-cat-title"><i class="fas fa-code"></i> Programming Languages</div>
+          <div class="skills-grid">
+            
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/></div>
+              <div class="skill-name">Python</div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"/></div>
+              <div class="skill-name">C</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"/></div>
+              <div class="skill-name">C++</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/></div>
+              <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"/></div>
+              <div class="skill-name">TypeScript</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div>
+          <div class="skill-cat-title"><i class="fas fa-globe"></i> Web Development</div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/></div>
+              <div class="skill-name">HTML5</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/></div>
+              <div class="skill-name">CSS3</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/></div>
+              <div class="skill-name">React</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/></div>
+              <div class="skill-name">Node.js</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="filter:invert(1)"/></div>
+              <div class="skill-name">Express</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"/></div>
+              <div class="skill-name">Bootstrap</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data & ML -->
+        <div>
+          <div class="skill-cat-title"><i class="fas fa-chart-bar"></i> Data & Machine Learning</div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"/></div>
+              <div class="skill-name">Pandas</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"/></div>
+              <div class="skill-name">NumPy</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"/></div>
+              <div class="skill-name">TensorFlow</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo" style="font-size:2.4rem">🤖</div>
+              <div class="skill-name">Scikit-learn</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo" style="font-size:2.4rem">📊</div>
+              <div class="skill-name">Matplotlib</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo" style="font-size:2.4rem">📈</div>
+              <div class="skill-name">Power BI</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Tools -->
+        <div>
+          <div class="skill-cat-title"><i class="fas fa-database"></i> Databases & Tools</div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/></div>
+              <div class="skill-name">MySQL</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"/></div>
+              <div class="skill-name">SQLite</div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(var(--img-invert,0))"/></div>
+              <div class="skill-name">GitHub</div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/></div>
+              <div class="skill-name">VS Code</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ─────────────────────────────────────── -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">My <span>Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-title">Data Analyst Intern</div>
+                <div class="exp-company">Unified Mentor</div>
+              </div>
+              <div class="exp-badge">Aug 2025 – Sep 2025</div>
+            </div>
+            <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Kolkata, India</div>
+            <div class="exp-desc">
+              Collected, cleaned, and analyzed datasets to provide actionable insights for internal projects.<br>
+              Developed dashboards and visualizations using Excel / Python / ML / Tableau to support decision-making.<br>
+              Implemented and tested multiple machine learning models to identify the most efficient approach for analyzing a dataset.
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">Pandas</span>
+              <span class="exp-tag">Tableau</span>
+              <span class="exp-tag">Numpy</span>
+              <span class="exp-tag">Matplotlib</span>
+              <span class="exp-tag">Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ──────────────────────────────────────── -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-title">Master's in Computer Application ( M.C.A. )</div>
+                <div class="exp-company">University of Kalyani</div>
+              </div>
+              <div class="exp-badge">2024 – 2026</div>
+            </div>
+            <div class="exp-location"><i class="fas fa-university"></i> Kalyani, West Bengal, India</div>
+            <div class="exp-desc">
+              CGPA : 8.81
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Data Structures</span>
+              <span class="exp-tag">Algorithms</span>
+              <span class="exp-tag">Machine Learning</span>
+              <span class="exp-tag">DBMS</span>
+              <span class="exp-tag">OS</span>
+              <span class="exp-tag">Computer Networks</span>
+              <span class="exp-tag">Artificial Intelligence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-title">B.Sc. in Computer Science</div>
+                <div class="exp-company">Kanchrapara College</div>
+              </div>
+              <div class="exp-badge">2021 – 2024</div>
+            </div>
+            <div class="exp-location"><i class="fas fa-school"></i> Kanchrapara, West Bengal, India</div>
+            <div class="exp-desc">
+              CGPA : 8.66 <br>
+              Percentage : 81.30 %
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Data Structures</span>
+              <span class="exp-tag">Algorithms</span>
+              <span class="exp-tag">C programming</span>
+              <span class="exp-tag">C++</span>
+              <span class="exp-tag">OS</span>
+              <span class="exp-tag">DBMS</span>
+              <span class="exp-tag">pHp</span>
+              <span class="exp-tag">JavaScript</span>
+              <span class="exp-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-title">Higher Secondary Education (12th)</div>
+                <div class="exp-company">Chakdaha Ramlal Academy</div>
+              </div>
+              <div class="exp-badge">2021</div>
+            </div>
+            <div class="exp-location"><i class="fas fa-school"></i> Chakdaha, West Bengal, India</div>
+            <div class="exp-desc">
+              West Bengal Council of Higher Secondary Education (WBCSE).<br>
+              Percentage : 85.60 %
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Physics</span>
+              <span class="exp-tag">Chemistry</span>
+              <span class="exp-tag">Biology</span>
+              <span class="exp-tag">Mathematics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <div class="exp-title">Secondary Education (10th)</div>
+                <div class="exp-company">Chakdaha Ramlal Academy</div>
+              </div>
+              <div class="exp-badge">2019</div>
+            </div>
+            <div class="exp-location"><i class="fas fa-school"></i> Chakdaha, West Bengal, India</div>
+            <div class="exp-desc">
+              West Bengal Board of Secondary Education (WBBSE).<br>
+              Percentage : 88.42 %
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Bengali</span>
+              <span class="exp-tag">English</span>
+              <span class="exp-tag">Physical Science</span>
+              <span class="exp-tag">Life Science</span>
+              <span class="exp-tag">Mathematics</span>
+              <span class="exp-tag">Geography</span>
+              <span class="exp-tag">History</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img">
+            🤖
+            <div class="project-overlay">
+              <a href="https://github.com/" target="_blank" class="overlay-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" target="_blank" class="overlay-btn live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">AI Chatbot Application</div>
+            <p class="project-desc">An intelligent conversational AI built with NLP capabilities, capable of understanding context and providing smart responses.</p>
+            <div class="project-techs">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            📊
+            <div class="project-overlay">
+              <a href="https://github.com/" target="_blank" class="overlay-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" target="_blank" class="overlay-btn live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Data Analytics Dashboard</div>
+            <p class="project-desc">A comprehensive dashboard for visualizing complex datasets with interactive charts, filters, and real-time analytics.</p>
+            <div class="project-techs">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            🛒
+            <div class="project-overlay">
+              <a href="https://github.com/" target="_blank" class="overlay-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" target="_blank" class="overlay-btn live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">E-Commerce Platform</div>
+            <p class="project-desc">A full-stack e-commerce solution with product management, cart functionality, payment integration, and order tracking.</p>
+            <div class="project-techs">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            ♟️
+            <div class="project-overlay">
+              <a href="https://github.com/" target="_blank" class="overlay-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" target="_blank" class="overlay-btn live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Chess Game with AI</div>
+            <p class="project-desc">A browser-based chess game featuring an AI opponent using Minimax algorithm with alpha-beta pruning for challenging gameplay.</p>
+            <div class="project-techs">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Minimax</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            🏥
+            <div class="project-overlay">
+              <a href="https://github.com/" target="_blank" class="overlay-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" target="_blank" class="overlay-btn live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Hospital Management System</div>
+            <p class="project-desc">A complete HMS with patient records, appointment scheduling, doctor management, and billing modules.</p>
+            <div class="project-techs">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Swing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            🌤️
+            <div class="project-overlay">
+              <a href="https://github.com/" target="_blank" class="overlay-btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" target="_blank" class="overlay-btn live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Weather Forecast App</div>
+            <p class="project-desc">A responsive weather app with 7-day forecast, location-based detection, and beautiful animated weather conditions.</p>
+            <div class="project-techs">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">OpenWeather API</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATES ───────────────────────────────────── -->
+  <section id="certificates">
+    <div class="container">
+      <h2 class="section-title">My <span>Certificates</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-img">
+            🐍
+            <div class="cert-ribbon">VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Python for Everybody Specialization</div>
+            <div class="cert-issuer">Coursera — University of Michigan</div>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i> December 2023</div>
+            <a href="#" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img">
+            📊
+            <div class="cert-ribbon">VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Data Science Professional Certificate</div>
+            <div class="cert-issuer">IBM — Coursera</div>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i> October 2023</div>
+            <a href="#" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img">
+            ⚛️
+            <div class="cert-ribbon">VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">React — The Complete Guide</div>
+            <div class="cert-issuer">Udemy</div>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i> August 2023</div>
+            <a href="#" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img">
+            🤖
+            <div class="cert-ribbon">VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Machine Learning Specialization</div>
+            <div class="cert-issuer">Coursera — Stanford / DeepLearning.AI</div>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i> June 2023</div>
+            <a href="#" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img">
+            ☁️
+            <div class="cert-ribbon">VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">AWS Cloud Practitioner Essentials</div>
+            <div class="cert-issuer">Amazon Web Services</div>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i> March 2024</div>
+            <a href="#" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img">
+            🗄️
+            <div class="cert-ribbon">VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">SQL for Data Science</div>
+            <div class="cert-issuer">Coursera — UC Davis</div>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i> January 2023</div>
+            <a href="#" target="_blank" class="cert-link"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info">
+            <div class="contact-box">
+              <div class="contact-box-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="contact-box-label">Phone</div>
+                <div class="contact-box-val">+91 62943 48178</div>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-box-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-box-label">Email</div>
+                <div class="contact-box-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6c7c8cfd5cee6c3cbc7cfca88c5c9cb">anishchatto2002@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-box-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-box-label">Location</div>
+                <div class="contact-box-val">Chakdaha, West Bengal, India</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials" style="margin-top:28px;">
+            <div class="contact-socials-title">Connect with me</div>
+            <div class="social-row">
+              <a href="https://github.com/Anish-000" target="_blank" class="social-pill">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/anish-chattopadhyay-6659192b9/" target="_blank" class="social-pill">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="https://www.instagram.com/007_phoenix_007/" target="_blank" class="social-pill">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="form-title">Send a Message ✉️</div>
+          <div class="form-group">
+            <div class="form-row">
+              <input type="text" class="form-input" placeholder="Your Name" />
+              <input type="email" class="form-input" placeholder="Your Email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <input type="tel" class="form-input" placeholder="Your Phone" />
+              <input type="text" class="form-input" placeholder="Your Address" />
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-input" placeholder="Your Message..."></textarea>
+          </div>
+          <button class="btn-send" onclick="handleSend()">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer id="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Anish Chattopadhyay</div>
+        <p class="footer-tagline">
+          Passionate about building elegant digital solutions and turning ideas into
+          reality through clean code and creative problem-solving.
+        </p>
+        <div style="display:flex;gap:10px;">
+          <a href="https://github.com/Anish-000" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anish-chattopadhyay-6659192b9/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/007_phoenix_007/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-section-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#home" onclick="navScrollTo('home');return false;">Home</a></li>
+          <li><a href="#about" onclick="navScrollTo('about');return false;">About</a></li>
+          <li><a href="#skills" onclick="navScrollTo('skills');return false;">Skills</a></li>
+          <li><a href="#experience" onclick="navScrollTo('experience');return false;">Experience</a></li>
+          <li><a href="#education" onclick="navScrollTo('education');return false;">Education</a></li>
+          <li><a href="#projects" onclick="navScrollTo('projects');return false;">Projects</a></li>
+          <li><a href="#certificates" onclick="navScrollTo('certificates');return false;">Certificates</a></li>
+          <li><a href="#contact" onclick="navScrollTo('contact');return false;">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-section-title">Connect With Me</div>
+        <div class="footer-social-row">
+          <a href="https://github.com/Anish-000" target="_blank" class="footer-social-link">
+            <span class="footer-social-icon"><i class="fab fa-github"></i></span> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/anish-chattopadhyay-6659192b9/" target="_blank" class="footer-social-link">
+            <span class="footer-social-icon"><i class="fab fa-linkedin-in"></i></span> LinkedIn
+          </a>
+          <a href="https://www.instagram.com/007_phoenix_007/" target="_blank" class="footer-social-link">
+            <span class="footer-social-icon"><i class="fab fa-instagram"></i></span> Instagram
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-section-title">Contact Info</div>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa9b94938992ba9f979b9396d4999597">anishchatto2002@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 62943 48178</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Chakdaha, West Bengal, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Made with <span>❤️</span> by <span>Anish Chattopadhyay</span> &copy; <span id="footerYear"></span> — All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ── JAVASCRIPT ─────────────────────────────────────── -->
+  <script src="script.js"></script>
+</body>
+</html>
