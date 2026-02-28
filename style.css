@@ -16,16 +16,18 @@
   --transition: 0.3s ease;
 }
 [data-theme="light"] {
-  --bg: #f0f4ff;
-  --bg2: #e8edf8;
-  --bg3: #dce4f5;
+  --accent: #0891b2;
+  --accent2: #6366f1;
+  --bg: #f0fdfa;
+  --bg2: #e0f2f1;
+  --bg3: #d1ebe8;
   --card: #ffffff;
-  --card2: #f5f7ff;
-  --text: #1a1f35;
-  --text2: #4a5270;
-  --border: rgba(0,180,220,0.2);
-  --shadow: 0 8px 32px rgba(0,0,0,0.1);
-  --glow: 0 0 20px rgba(0,180,220,0.15);
+  --card2: #fefffe;
+  --text: #0f172a;
+  --text2: #64748b;
+  --border: rgba(8,145,178,0.15);
+  --shadow: 0 8px 32px rgba(0,0,0,0.08);
+  --glow: 0 0 20px rgba(8,145,178,0.12);
 }
 
 /* ── RESET & BASE ────────────────────────────────── */
